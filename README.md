@@ -1,5 +1,7 @@
 # luamqttc - An lua mqtt client
 
+[ ![Codeship Status for Yongke/luamqttc](https://codeship.com/projects/337086e0-da1a-0134-a3d0-5af04d25d964/status?branch=master)](https://codeship.com/projects/203577)
+
 luamqttc is base on the paho Embedded MQTT C Client Library - MQTTPacket.
 
 It also depends on luasocket and luasec.
@@ -13,6 +15,7 @@ Supported features:
 
 ## Note
 * To avoid 1) luasec package from luarocks repo can not load and 2) 100% cpu usage problem, you can install luasec manually from https://github.com/Yongke/luasec
+* org.eclipse.paho.mqtt.embedded-c is compiled by default in little-endian byte order, to compile it in big-endian byte order, use compile flag `-DREVERSED`
 
 ## How to build
 
